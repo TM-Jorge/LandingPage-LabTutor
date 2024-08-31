@@ -1,0 +1,266 @@
+/* Estilo general del cuerpo */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #ffffff; /* Fondo blanco sólido */
+}
+
+/* Estilo del encabezado */
+.header {
+    background-color: #4a9d8c; /* Color verde azulado oscuro */
+    color: #fff;
+    padding: 15px 0;
+    position: relative;
+}
+
+.header .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.header nav {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap; /* Permite que los enlaces se ajusten en pantallas pequeñas */
+}
+
+.header nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.header nav a:hover {
+    text-decoration: underline;
+}
+
+.cta-button {
+    background-color: #4a9d8c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #357a6e;
+}
+
+/* Estilo de la sección hero */
+.hero {
+    background-color: #ffffff; /* Fondo blanco sólido */
+    color: #4a9d8c; /* Color verde azulado para el texto */
+    text-align: center;
+    padding: 60px 20px;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    margin: 20px 0; /* Espacio arriba y abajo */
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Estilo del contenedor de información */
+.info {
+    background-color: #fff; /* Fondo blanco */
+    padding: 40px 20px;
+    margin: 20px 0;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    color: #333;
+    text-align: center;
+}
+
+.info .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.info-text h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.info-text p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    max-width: 800px; /* Limita el ancho del texto */
+    margin: 0 auto; /* Centra el texto */
+}
+
+/* Estilo de la nueva sección de información relevante de ciencias */
+.science-info {
+    background-color: #fff;
+    padding: 40px 20px;
+    margin: 20px 0;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    color: #333;
+    text-align: center;
+}
+
+.science-info h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.science-info p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    max-width: 800px; /* Limita el ancho del texto */
+    margin: 0 auto; /* Centra el texto */
+}
+
+.video-wrapper {
+    margin: 20px 0;
+}
+
+/* Estilo del modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #ffffff;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 90%; /* Ancho adaptado */
+    max-width: 400px; /* Ajusta el ancho máximo del modal */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    box-sizing: border-box; /* Asegura que el padding y el borde se incluyan en el tamaño total */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.modal-content form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-content label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.modal-content input[type="text"],
+.modal-content input[type="password"] {
+    width: 100%;
+    padding: 10px; /* Ajusta el padding para mejor adaptación */
+    margin: 5px 0; /* Reduce el margen para que el formulario no se desborde */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.modal-content input[type="submit"] {
+    background-color: #4a9d8c;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.modal-content input[type="submit"]:hover {
+    background-color: #357a6e;
+}
+
+/* Estilo del pie de página */
+.footer {
+    background-color: #4a9d8c; /* Color verde azulado oscuro */
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    .header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header nav {
+        margin-top: 10px;
+    }
+
+    .cta-button {
+        margin-top: 10px;
+    }
+    
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .info, .science-info {
+        padding: 20px 10px;
+    }
+
+    .info-text h2, .science-info h2 {
+        font-size: 1.5rem;
+    }
+
+    .info-text p, .science-info p {
+        font-size: 1rem;
+    }
+
+    .modal-content {
+        width: 95%;
+    }
+}
